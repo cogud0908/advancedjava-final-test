@@ -51,5 +51,9 @@ public class User {
 		return true;
 	}
 	
+	public String toString()
+	{
+		return id;
+	}
 	
 }
