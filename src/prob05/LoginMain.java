@@ -27,11 +27,11 @@ public class LoginMain {
 		try {
 			login(joinUsers,newUser);
 			
-		} catch (UserNotFoundException e) { // TODO: handle exception }
-			System.out.println("사용자를 찾을 수 없습니다.");
+		} catch (UserNotFoundException e) { 
+			System.out.println("error : "+e);
 			return;
-		} catch (PasswordDismatchException e) { // TODO: handle exception
-			System.out.println("비밀번호가 맞지 않습니다.");
+		} catch (PasswordDismatchException e) { 
+			System.out.println("erorr : "+e);
 			return;
 		}
 
